@@ -52,7 +52,7 @@ function Cart() {
                         }
                         <div className="row">
                             <div className="col col-5"><h3 className="title">TotalCost - ${cost}</h3></div>
-                            <div className="col col-4"><Link to={`/order/${params.id}`} className="btn btn-light pinkbutton m-2">Proceed to Buy</Link></div>
+                            {/*<div className="col col-4"><Link to={`/order/${params.id}`} className="btn btn-light pinkbutton m-2">Proceed to Buy</Link></div>*/}
                             <div className="col col-3"><Link to={`/main/${params.id}`} className="btn btn-dark m-2">Buy More</Link></div>
                             {/* <div className="col col-5"><Link className="btn btn-light pinkbutton m-2">Proceed to Buy</Link></div> */}
                         </div>
