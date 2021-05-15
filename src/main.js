@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Link, useParams, useHistory } from "react-router-dom";
 import { getAdminProducts } from "./api";
 
+
 function Main() {
 
     const params = useParams();

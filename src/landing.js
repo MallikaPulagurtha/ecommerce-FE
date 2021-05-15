@@ -18,6 +18,7 @@ function Landing() {
                 <p>Tired of the boring walls, plain shelves, usual lives? Come along with me on one of a kind unusual adventures with your heart. Here are some pictures of my variety of art collections to mesmerize you along with your heart!</p>
                 <hr />
 
+
                 <div className="row">
                     <div className="col-lg-4"><img src={"./1.png"} /></div>
                     <div className="col-lg-4"><img src={"./4.png"} /></div>

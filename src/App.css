@@ -44,6 +44,7 @@ a:hover {
   opacity: 1;
   transition: all 400ms;
 }
+
 .center {
   display: flex;
   flex-direction: column;

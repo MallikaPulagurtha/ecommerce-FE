@@ -44,6 +44,7 @@ function ViewProd() {
                     setCopiesAvailable("");
                     // await updateCopies(userId, { number : ()})
                 }}>
+
                     <h3 class="title">{params.product}</h3>
                     <div class="card view">
                         <div className="row viewprodcard">

@@ -1,9 +1,7 @@
 import React from "react"
 import { Link, useParams } from "react-router-dom";
 
-
 function Order() {
-
     const params = useParams();
     console.log(params);
 
