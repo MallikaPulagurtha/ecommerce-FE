@@ -48,10 +48,10 @@ function ViewProd() {
                     <h3 class="title">{params.product}</h3>
                     <div class="card view">
                         <div className="row viewprodcard">
-                            <div className="col col-7">
+                            <div className="col col-lg-7">
                                 <img class="viewimg" src={process.env.PUBLIC_URL + `/${product}.png`} />
                             </div>
-                            <div className="col col-5 center">
+                            <div className="col col-lg-5 center">
                                 <h3 class="title">{title}</h3>
                                 <hr />
                                 <div className="row">
@@ -61,7 +61,7 @@ function ViewProd() {
                                 <h5>Copies Available - {copies}</h5>
                                 <h5><b>Cost - ${cost}</b></h5>
                                 <div className="buttons">
-                                    <button className="btn btn-dark buttons">Add to Cart</button>
+                                    <button className="btn btn-dark buttons m-2">Add to Cart</button>
                                     <Link to={`/main/${userId}`} className="btn btn-light pinkbutton m-2">Buy More</Link>
                                 </div>
                             </div>

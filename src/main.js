@@ -35,13 +35,13 @@ function Main() {
                             prods.map((item, index) => {
                                 if (item.category == "Pencil Sketches") {
                                     return <div className="col col-lg-4">
-                                        <div>
-                                            <div class="card art">
-                                                <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
-                                                <div className="center"><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
-                                            </div>
+                                        {/* <div> */}
+                                        <div class="card ">
+                                            <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
+                                            <div ><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
                                         </div>
                                     </div>
+                                    {/* </div> */ }
                                 }
                             })
                         }
@@ -52,30 +52,30 @@ function Main() {
                             prods.map((item, index) => {
                                 if (item.category == "Personalised Portraits") {
                                     return <div className="col col-lg-4">
-                                        <div>
-                                            <div class="card art">
-                                                <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
-                                                <div><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark">{item.title}</Link></div>
-                                            </div>
+                                        {/* <div> */}
+                                        <div class="card ">
+                                            <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
+                                            <div><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark">{item.title}</Link></div>
                                         </div>
                                     </div>
+                                    {/* </div> */ }
                                 }
                             })
                         }
                     </div>
-                    <h3 class="title">Art Forms</h3>
+                    <h3 class="title"> Forms</h3>
                     <div className="row">
                         {
                             prods.map((item, index) => {
-                                if (item.category == "Art Forms") {
+                                if (item.category == " Forms") {
                                     return <div className="col col-lg-4">
-                                        <div>
-                                            <div class="card art">
-                                                <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
-                                                <div className="center"><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
-                                            </div>
+                                        {/* <div> */}
+                                        <div class="card ">
+                                            <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
+                                            <div ><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
                                         </div>
                                     </div>
+                                    {/* </div> */ }
                                 }
                             })
                         }
@@ -86,13 +86,13 @@ function Main() {
                             prods.map((item, index) => {
                                 if (item.category == "Silhouette") {
                                     return <div className="col col-lg-4">
-                                        <div>
-                                            <div class="card art">
-                                                <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
-                                                <div className="center"><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
-                                            </div>
+                                        {/* <div> */}
+                                        <div class="card ">
+                                            <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
+                                            <div ><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
                                         </div>
                                     </div>
+                                    {/* </div> */ }
                                 }
                             })
                         }
@@ -103,13 +103,13 @@ function Main() {
                             prods.map((item, index) => {
                                 if (item.category == "Mandala") {
                                     return <div className="col col-lg-4">
-                                        <div>
-                                            <div class="card art">
-                                                <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
-                                                <div className="center"><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
-                                            </div>
+                                        {/* <div> */}
+                                        <div class="card ">
+                                            <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
+                                            <div ><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
                                         </div>
                                     </div>
+                                    {/* </div> */ }
                                 }
                             })
                         }
@@ -120,13 +120,13 @@ function Main() {
                             prods.map((item, index) => {
                                 if (item.category == "Painting") {
                                     return <div className="col col-lg-4">
-                                        <div>
-                                            <div class="card art">
-                                                <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
-                                                <div className="center"><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
-                                            </div>
+                                        {/* <div> */}
+                                        <div class="card ">
+                                            <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
+                                            <div ><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
                                         </div>
                                     </div>
+                                    {/* </div> */ }
                                 }
                             })
                         }
@@ -137,20 +137,20 @@ function Main() {
                             prods.map((item, index) => {
                                 if (item.category == "Theme-based") {
                                     return <div className="col col-lg-4">
-                                        <div>
-                                            <div class="card art">
-                                                <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
-                                                <div className="center"><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
-                                            </div>
+                                        {/* <div> */}
+                                        <div class="card ">
+                                            <div><img src={process.env.PUBLIC_URL + `/${item.product}.png`} /></div>
+                                            <div ><Link to={`viewprod/${params.id}+${item.title}+${item.product}+${item.category}+${item.cost}+${item.number}`} className="btn btn-dark  ">{item.title}</Link></div>
                                         </div>
                                     </div>
+                                    {/* </div> */ }
                                 }
                             })
                         }
                     </div>
                 </form>
                 <div className="col col-lg-3 center ">
-                    <Link to={`/cart/${userId}`} className="btn btn-light pinkbutton m-2">Go to Cart</Link>
+                    <Link to={`/c/${userId}`} className="btn btn-light pinkbutton m-2">Go to Cart</Link>
                 </div>
             </section>
         </>
