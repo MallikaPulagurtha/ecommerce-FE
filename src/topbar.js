@@ -4,18 +4,23 @@ import { Link, useHistory } from "react-router-dom";
 function Topbar() {
     return (
         <>
-            <header>
+            {/* <header> */}
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <h2><a href="/">Life is an Art</a></h2>
-                <nav>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><Link to="/adminlogin">Admin</Link></li>
-                    <li><Link to="/login" onClick={() => {
-                        window.localStorage.removeItem("loginToken");
-                    }}>Logout</Link></li>
-                </nav>
-            </header>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="/adminlogin">Admin</a>
+                        <a class="nav-link" href="/login">Login</a>
+                        <a class="nav-link" href="/register">Register</a>
+                        <a class="nav-link" href="/" onClick={() => {
+                            window.localStorage.removeItem("loginToken");
+                        }}>Logout</a>
+                    </div>
+                </div>
+            </nav>
+            {/* </header> */}
         </>
     )
 }

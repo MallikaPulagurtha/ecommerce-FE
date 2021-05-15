@@ -19,12 +19,12 @@ function Landing() {
                 <hr />
 
                 <div className="row">
-                    <div className="col-4"><img src={"./1.png"} /></div>
-                    <div className="col-4"><img src={"./4.png"} /></div>
-                    <div className="col-4"><img src={"./29.png"} /></div>
-                    <div className="col-4"><img src={"./11.png"} /></div>
-                    <div className="col-4"><img src={"./9.png"} /></div>
-                    <div className="col-4"><img src={"./2.png"} /></div>
+                    <div className="col-lg-4"><img src={"./1.png"} /></div>
+                    <div className="col-lg-4"><img src={"./4.png"} /></div>
+                    <div className="col-lg-4"><img src={"./29.png"} /></div>
+                    <div className="col-lg-4"><img src={"./11.png"} /></div>
+                    <div className="col-lg-4"><img src={"./9.png"} /></div>
+                    <div className="col-lg-4"><img src={"./2.png"} /></div>
                 </div>
             </section>
 
@@ -32,19 +32,13 @@ function Landing() {
                 <h3 class="title">Learn more</h3>
                 <p>Want to know about my upcoming events, or participate in any of my workshops? Just sign up for my mailing list. No spam from me, I promise! Except for the spam I give you to keep up your energy while you're low or having a bad day. Have a blast! I have tons of that.</p>
                 <hr />
-                <form>
+                <form >
                     <input type="email" placeholder="Email" />
                     <a href="#" class="btn">Subscribe now</a>
                 </form>
             </section>
             <footer>
-                <p>COpyrights, all are my own images</p>
-                <p>Why are you even reading this?! There's never anything interesting in the footer!</p>
-                <ul>
-                    <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fa fa-snapchat-square fa-2x"></i></a></li>
-                </ul>
+                <p className="center">Copyrights, all are my own images &hearts;</p>
             </footer>
         </>
     )

@@ -31,7 +31,9 @@ a {
 a:hover {
   opacity: 1;
 }
-
+.buy {
+  margin-top: 20px;
+}
 .pinkbutton {
   color: white;
   border-radius: 4px;
@@ -42,7 +44,16 @@ a:hover {
   opacity: 1;
   transition: all 400ms;
 }
-
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .pinkbutton:hover {
   background-color: #b15191;
 }
@@ -76,9 +87,13 @@ td {
   padding: 10px;
 }
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   padding: 10px;
+}
+.imagecart {
+  max-height: 30vh;
+  max-width: 30vw;
 }
 
 section h3.title {
@@ -102,12 +117,18 @@ section p {
   }
 }
 
+@media (max-width: 800px) {
+  section {
+    font-size: 15px;
+  }
+}
+
 /*Header Styles*/
 
 header {
   background-color: rgb(20, 20, 20);
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,11 +151,7 @@ header h2 {
 
 header nav {
   display: flex;
-  margin-right: -15px;
-}
-
-header nav li {
-  margin: 0 15px;
+  /* margin-right: -15px; */
 }
 
 @media (max-width: 800px) {
@@ -154,7 +171,8 @@ header nav li {
   position: relative;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
+  min-width: 100%;
+  min-height: 95vh;
   color: #fff;
 }
 
@@ -175,6 +193,10 @@ header nav li {
   font: 72px "Amatic SC", sans-serif;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
   margin-bottom: 15px;
+}
+
+.font {
+  font: "Amatic SC", sans-serif;
 }
 
 .hero h3 {
@@ -263,7 +285,7 @@ header nav li {
   color: #e07e7b;
 }
 
-.packages .grid li h4 {
+.packages .grid li {
   font-size: 30px;
   margin: 25px 0;
 }
@@ -350,7 +372,7 @@ footer p {
   align-self: center;
 }
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
   footer {
     flex-direction: column;
   }
@@ -363,16 +385,16 @@ footer p {
   footer ul li {
     margin: 0 8px;
   }
-}
+} */
 /* login */
 .container {
   margin-top: 70px;
   color: white;
 }
 .login {
+  margin-top: 20px;
   background-color: rgba(20, 20, 20);
-  /* background-image: url("https://getwallpapers.com/wallpaper/full/9/c/d/270412.jpg"); */
-  padding: 40px;
+  padding: 20px;
 }
 .login_btn {
   padding: 10px;
@@ -387,9 +409,7 @@ footer p {
   opacity: 1;
   transition: all 400ms;
 }
-input {
-  height: 50px !important;
-}
+
 .loginbg {
   position: absolute;
   top: 0;
@@ -401,47 +421,40 @@ input {
   z-index: -1;
   background-color: #80a3db;
 }
-.row {
+.viewprodcard {
   margin: 40px;
 }
-.card {
-  text-align: center;
-  padding: 10px;
-  margin: 30px auto;
-  width: 400px;
-  /* height: 500px; */
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
-    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-  transition: 0.4s;
+.art {
+  max-height: 100vh;
+  max-width: 60vw;
 }
 .arttitle {
   font-size: 30px;
 }
 
-.card {
-  box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
-  border-radius: 15px;
-  transition: transform 0.2s;
-}
 .view {
-  width: 800px;
+  max-width: 70vw;
+  max-height: 100vh;
 }
-
+.cart {
+  max-width: 80vw;
+  max-height: 90vh;
+}
 .card-body {
   color: rgb(20, 20, 20);
-  padding: 10px;
 }
-/* .card:hover {
-  transform: scale(1.02);
-} */
+.col-lg-4 {
+  padding: 20px;
+}
 .btn-light {
   padding: 10px;
-  width: 100%;
+  min-height: 8vh;
+  min-width: 20vw;
 }
 .btn-dark {
-  text-transform: uppercase;
   padding: 10px;
-  width: 100%;
+  min-height: 8vh;
+  min-width: 26vw;
 }
 .buttons {
   margin: 10px;

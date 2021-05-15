@@ -35,39 +35,39 @@ function ViewProd() {
     return (
         <>
             <section>
-                <div>
-                    <form onSubmit={async (e) => {
-                        e.preventDefault();
-                        orderData = { title, product, category, cost };
-                        await postUserOrder(userId, orderData);
-                        history.push(`/cart/${userId}`);
-                        setCopiesAvailable("");
-                        // await updateCopies(userId, { number : ()})
-                    }}>
-                        <h3 class="title">{params.product}</h3>
-                        <div class="card view">
-                            <div className="row">
-                                <div className="col col-7">
-                                    <img class="viewimg" src={process.env.PUBLIC_URL + `/${product}.png`} />
+                {/* <div> */}
+                <form onSubmit={async (e) => {
+                    e.preventDefault();
+                    orderData = { title, product, category, cost };
+                    await postUserOrder(userId, orderData);
+                    history.push(`/cart/${userId}`);
+                    setCopiesAvailable("");
+                    // await updateCopies(userId, { number : ()})
+                }}>
+                    <h3 class="title">{params.product}</h3>
+                    <div class="card view">
+                        <div className="row viewprodcard">
+                            <div className="col col-7">
+                                <img class="viewimg" src={process.env.PUBLIC_URL + `/${product}.png`} />
+                            </div>
+                            <div className="col col-5 center">
+                                <h3 class="title">{title}</h3>
+                                <hr />
+                                <div className="row">
+                                    <h4><b>Product Details</b></h4>
                                 </div>
-                                <div className="col col-5">
-                                    <h3 class="title">{title}</h3>
-                                    <hr />
-                                    <div className="row">
-                                        <h4><b>Product Details</b></h4>
-                                    </div>
-                                    <h5>Category - {category}</h5>
-                                    <h5>Copies Available - {copies}</h5>
-                                    <h5><b>Cost - ${cost}</b></h5>
-                                    <div className="buttons">
-                                        <button className="btn btn-dark buttons">Add to Cart</button>
-                                        <Link to={`/main/${userId}`} className="btn btn-light pinkbutton m-2">Buy More</Link>
-                                    </div>
+                                <h5>Category - {category}</h5>
+                                <h5>Copies Available - {copies}</h5>
+                                <h5><b>Cost - ${cost}</b></h5>
+                                <div className="buttons">
+                                    <button className="btn btn-dark buttons">Add to Cart</button>
+                                    <Link to={`/main/${userId}`} className="btn btn-light pinkbutton m-2">Buy More</Link>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
+                {/* </div> */}
             </section>
         </>
     )
